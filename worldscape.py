@@ -7,6 +7,7 @@ class Worldscape:
         """
         self.name_list = name_list
         self.letters_used = []
+        self.name_guessed = ""
         self.lives = 8
 
     def generate_secret_name(self):
@@ -67,6 +68,18 @@ class Worldscape:
             return True
         else:
             return False
+
+    def replace_encoded_name_with_guessed_letter(self, letter, secret_name, encoded_name):
+        """
+        Function to replace dashes in the encoded name with the correct guessed letter.
+        """
+        for i in range(len(secret_name)):
+            if secret_name[i] == letter:
+                self.name_guessed += letter.capitalize()
+            else:
+                self.name_guessed += encoded_name[i]
+        return self.name_guessed
+
 
     
 
