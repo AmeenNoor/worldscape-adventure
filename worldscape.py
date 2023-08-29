@@ -61,4 +61,14 @@ class Worldscape:
         self.letters_used.append(letter)
         return self.letters_used
 
+    def is_letter_in_name(self, secret_name, letter):
+        """
+        Function determines whether a specific letter is present within
+        the given secret name.
+        """
+        if letter in secret_name:
+            return True
+        else:
+            return False
+
         
