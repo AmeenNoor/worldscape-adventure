@@ -45,8 +45,7 @@ class Worldscape:
 
     def is_letter_in_name(self, secret_name, letter):
         """
-        Function determines whether a given letter is present in the
-        secret name.
+        Function determines whether a given letter is present in the secret name.
         """
         if letter in secret_name:
             return True
@@ -55,11 +54,19 @@ class Worldscape:
 
     def letters_used(self, letter):
         """
-        Function takes a letter entered by the user and adds it to the
-        `letters_used` list.
+        Function takes a letter entered by the user and adds it to the `letters_used` list.
         """
         self.letters_used.append(letter)
         return self.letters_used
+
+    def is_letter_used_before(self, letter):
+        """
+        Function checks whether if a letter has been previously entered by the user.
+        """
+        if letter in self.letters_used:
+            return True
+        else:
+            return False
 
     
 
