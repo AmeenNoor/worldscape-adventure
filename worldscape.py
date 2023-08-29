@@ -6,6 +6,7 @@ class Worldscape:
         Constructor to initialize class attributes.
         """
         self.name_list = name_list
+        self.letters_used = []
         self.lives = 8
 
     def generate_secret_name(self):
@@ -51,4 +52,13 @@ class Worldscape:
             return True
         else:
             return False
+
+    def letters_used(self, letter):
+        """
+        Function takes a letter entered by the user and adds it to the
+        `letters_used` list.
+        """
+        self.letters_used.append(letter)
+        return self.letters_used
+
         
