@@ -80,6 +80,18 @@ class Worldscape:
                 self.name_guessed += encoded_name[i]
         return self.name_guessed
 
+    def display_output(self, name):
+        """
+        Function displays game information to the user, including
+        the number of remaining lives, the guessed letters and dashes in the
+        secret name, and the list of letters that have been used before.
+        """
+        print("************************************")
+        print(f"Lives: {self.lives}\n")
+        print(f"{name}: {self.name_guessed}\n")
+        print(f"Letters used: {', '.join(self.letters_used)}\n")
+        print("************************************")
+
 
     
 
