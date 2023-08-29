@@ -9,6 +9,9 @@ class Worldscape:
         self.letters_used = []
         self.name_guessed = ""
         self.lives = 8
+        self.game_played = 0
+        self.game_won = 0
+        self.game_lost = 0
 
     def generate_secret_name(self):
         """
@@ -90,6 +93,19 @@ class Worldscape:
         print(f"Lives: {self.lives}\n")
         print(f"{name}: {self.name_guessed}\n")
         print(f"Letters used: {', '.join(self.letters_used)}\n")
+        print("************************************")
+
+    def display_statistics(self):
+        """
+        Function displays statistics related to the user's gameplay,
+        including the number of games played, games won, and games lost.
+        """
+        print("************************************")
+        print("\nGame Statistics:")
+        print("************************************")
+        print(f"Game played: {self.game_played}")
+        print(f"Game won: {self.game_won}")
+        print(f"Game lost: {self.game_lost}")
         print("************************************")
 
 
