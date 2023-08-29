@@ -41,4 +41,14 @@ class Worldscape:
             return False
 
         return True
+
+    def is_letter_in_name(self, secret_name, letter):
+        """
+        Function determines whether a given letter is present in the
+        secret name.
+        """
+        if letter in secret_name:
+            return True
+        else:
+            return False
         
