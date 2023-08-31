@@ -6,8 +6,9 @@ class Worldscape:
         Constructor to initialize class attributes.
         """
         self.name_list = name_list
+        self.secret_name = ""
+        self.encoded_named = ""
         self.letters_used = []
-        self.name_guessed = ""
         self.lives = 8
         self.game_played = 0
         self.game_won = 0
@@ -17,20 +18,20 @@ class Worldscape:
         """
         Function randomly select element from list
         """
-        return random.choice(self.name_list).lower()    #https://www.w3schools.com/python/ref_random_choice.asp
+        self.secret_name = random.choice(self.name_list).lower()    #https://www.w3schools.com/python/ref_random_choice.asp
+        return self.secret_name
 
-    def encode_name(self, secret_name):
+    def encode_name(self):
         """
         Function to encode the name by replacing its characters with "-".
         If country name contains spaces will display spaces as spaces and other letters as dashes.
         """
-        encoded_name = ""
-        for x in secret_name:
+        for x in self.secret_name:
             if (x == " "):
-                encoded_name += " "
+                self.encoded_named += " "
             else:
-                encoded_name += "-"
-        return encoded_name
+                self.encoded_named += "-"
+        return self.encoded_named
 
     def is_letter_valid(self, input_letter):
         """
@@ -47,16 +48,16 @@ class Worldscape:
 
         return True
 
-    def is_letter_in_name(self, secret_name, letter):
+    def is_letter_in_name(self, letter):
         """
         Function determines whether a given letter is present in the secret name.
         """
-        if letter in secret_name:
+        if letter in self.secret_name:
             return True
         else:
             return False
 
-    def letters_used(self, letter):
+    def add_used_letter(self, letter):
         """
         Function takes a letter entered by the user and adds it to the `letters_used` list.
         """
@@ -72,16 +73,18 @@ class Worldscape:
         else:
             return False
 
-    def replace_encoded_name_with_guessed_letter(self, letter, secret_name, encoded_name):
+    def replace_encoded_name_with_guessed_letter(self, letter):
         """
         Function to replace dashes in the encoded name with the correct guessed letter.
         """
-        for i in range(len(secret_name)):
-            if secret_name[i] == letter:
-                self.name_guessed += letter.capitalize()
+        new_encoded_name = ""
+        for i in range(len(self.secret_name)):
+            if self.secret_name[i] == letter:
+                new_encoded_name += letter.capitalize()
             else:
-                self.name_guessed += encoded_name[i]
-        return self.name_guessed
+                new_encoded_name += self.encoded_named[i]
+        self.encoded_named = new_encoded_name
+        return self.encoded_named
 
     def display_output(self, name):
         """
@@ -91,7 +94,7 @@ class Worldscape:
         """
         print("************************************")
         print(f"Lives: {self.lives}\n")
-        print(f"{name}: {self.name_guessed}\n")
+        print(f"{name}: {self.encoded_named}\n")
         print(f"Letters used: {', '.join(self.letters_used)}\n")
         print("************************************")
 
