@@ -24,16 +24,20 @@ if __name__ == "__main__":
                     game.add_used_letter(input_letter)
                     if game.is_letter_in_name(input_letter):
                         game.replace_encoded_name_with_guessed_letter(input_letter)
-                        if '-' not in game.encoded_named:
+                        print(game.secret_name) #australia
+                        print(game.encoded_named) #AUSTRALIA
+                        if game.secret_name == game.encoded_named.lower():
                             print("Congratulations, you won the game!")
                             game.game_played += 1
                             game.game_won += 1
+                            break
                     else:
                         game.lives -= 1
-
-        if game.secret_name != game.encoded_named:
+        print(game.secret_name) #australia
+        print(game.encoded_named) #AUSTRALIA
+        if game.secret_name != game.encoded_named.lower():
             print("Sorry, you lost the game.")
-            print(f"The word was: {game.secret_name.capitalize()}")
+            print(f"The word was: {game.secret_name.upper()}")
             game.game_lost += 1
 
         play_again = input("Play another game (y to continue, anything else will stop the game)? ")
