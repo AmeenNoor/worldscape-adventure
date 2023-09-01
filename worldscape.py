@@ -98,6 +98,18 @@ class Worldscape:
         print(f"Letters used: {', '.join(self.letters_used)}\n")
         print("************************************")
 
+    def update_game_statistics(self, if_won):
+        """
+        Function to increment the total games played and either the total games won 
+        or the total games lost based on the outcome of the game.
+        """
+        self.game_played += 1
+        if if_won:
+            self.game_won += 1
+        else:
+            self.game_lost += 1
+
+
     def display_statistics(self):
         """
         Function displays statistics related to the user's gameplay,
