@@ -108,8 +108,3 @@ class Worldscape:
         print(f"Game won: {game_won}")
         print(f"Game lost: {game_lost}")
         print("************************************")
-
-
-    
-
-        
