@@ -8,6 +8,10 @@ if __name__ == "__main__":
     "Austria", "Azerbaijan"]
 
     run_game = True
+    game_played = 0
+    game_won = 0
+    game_lost = 0
+
     while run_game:
         game = Worldscape(name_list)
         game.generate_secret_name().lower()
@@ -28,8 +32,8 @@ if __name__ == "__main__":
                         print(game.encoded_named) #AUSTRALIA
                         if game.secret_name == game.encoded_named.lower():
                             print("Congratulations, you won the game!")
-                            game.game_played += 1
-                            game.game_won += 1
+                            game_played += 1
+                            game_won += 1
                             break
                     else:
                         game.lives -= 1
@@ -38,11 +42,12 @@ if __name__ == "__main__":
         if game.secret_name != game.encoded_named.lower():
             print("Sorry, you lost the game.")
             print(f"The word was: {game.secret_name.upper()}")
-            game.game_lost += 1
+            game_played += 1
+            game_lost += 1
 
         play_again = input("Play another game (y to continue, anything else will stop the game)? ")
         if play_again.lower() != 'y':
-            game.display_statistics()
+            game.display_statistics(game_played, game_won, game_lost)
             run_game = False
         
             

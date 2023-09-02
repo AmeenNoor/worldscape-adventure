@@ -10,9 +10,6 @@ class Worldscape:
         self.encoded_named = ""
         self.letters_used = []
         self.lives = 8
-        self.game_played = 0
-        self.game_won = 0
-        self.game_lost = 0
 
     def generate_secret_name(self):
         """
@@ -98,19 +95,8 @@ class Worldscape:
         print(f"Letters used: {', '.join(self.letters_used)}\n")
         print("************************************")
 
-    def update_game_statistics(self, if_won):
-        """
-        Function to increment the total games played and either the total games won 
-        or the total games lost based on the outcome of the game.
-        """
-        self.game_played += 1
-        if if_won:
-            self.game_won += 1
-        else:
-            self.game_lost += 1
 
-
-    def display_statistics(self):
+    def display_statistics(self, game_played, game_won, game_lost):
         """
         Function displays statistics related to the user's gameplay,
         including the number of games played, games won, and games lost.
@@ -118,9 +104,9 @@ class Worldscape:
         print("************************************")
         print("\nGame Statistics:")
         print("************************************")
-        print(f"Game played: {self.game_played}")
-        print(f"Game won: {self.game_won}")
-        print(f"Game lost: {self.game_lost}")
+        print(f"Game played: {game_played}")
+        print(f"Game won: {game_won}")
+        print(f"Game lost: {game_lost}")
         print("************************************")
 
 
