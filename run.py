@@ -27,14 +27,34 @@ def update_game_statistics(is_won):
     Function to increment the total games played and either the total games won 
     or the total games lost based on the outcome of the game.
     """
+    global game_played, game_won, game_lost
     game_played += 1
     if is_won:
         game_won += 1
     else:
         game_lost += 1
 
+def display_how_to_play():
+    print("************************************")
+    print("HOW TO PLAY")
+    print("************************************")
+    print("Welcome to the Worldscape game!")
+    print("In this game, you will be given the opportunity to guess a name, which could be a country, city, or landmark.")
+    print("Here's how to play:")
+    print("1. Select 'PLAY GAME' from the main menu.")
+    print("2. Choose whether you want to guess a country, city, or landmark.")
+    print("3. You will be presented with a name, where the letters are initially hidden with dashes.")
+    print("4. You have 8 lives to guess the name correctly.")
+    print("5. Guess one letter at a time by entering a single alphabetical character.")
+    print("6. If the letter you guessed is in the name, it will be revealed.")
+    print("7. If the letter is not in the name, you will lose one life.")
+    print("8. Keep guessing letters until you either correctly guess the entire name or run out of lives.")
+    print("9. If you correctly guess the name, you win the game. Otherwise, you lose.")
+    print("10. You can play again as many times as you like or view your game statistics.")
+    print("************************************")
+
+
 def play_game(name_list, name):
-    global game_played, game_won, game_lost
     game = Worldscape(name_list)
     game.generate_secret_name().lower()
     game.encode_name()
@@ -63,10 +83,6 @@ def play_game(name_list, name):
         print(f"The {name} was: {game.secret_name.upper()}")
         update_game_statistics(False)
 
-    play_again = input("Play another game (y to continue, anything else will stop the game)? ")
-    if play_again.lower() != 'y':
-        display_statistics()
-
 def main():
     while True:      
         print("1. HOW TO PLAY")
@@ -77,7 +93,7 @@ def main():
         if option != 1 and option != 2 and option != 3 and option != 4:
             print("Enter '1' or '2' to choose from the menu!\n")
         elif option == 1:
-            pass
+            display_how_to_play()
         elif option == 2:
             while True:
                 print("1. COUNTRY")
@@ -92,6 +108,9 @@ def main():
                     play_game(city_list, "City")
                 else:
                     play_game(city_list, "Landmarks")
+                play_again = input("Play another game (y to continue, anything else will stop the game)? ")
+                if play_again.lower() != 'y':
+                    break
         elif option == 3:
             display_statistics()
         else:
