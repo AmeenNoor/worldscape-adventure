@@ -95,16 +95,3 @@ class Worldscape:
         print(f"Letters used: {', '.join(self.letters_used)}\n")
         print("************************************")
 
-
-    def display_statistics(self, game_played, game_won, game_lost):
-        """
-        Function displays statistics related to the user's gameplay,
-        including the number of games played, games won, and games lost.
-        """
-        print("************************************")
-        print("\nGame Statistics:")
-        print("************************************")
-        print(f"Game played: {game_played}")
-        print(f"Game won: {game_won}")
-        print(f"Game lost: {game_lost}")
-        print("************************************")
