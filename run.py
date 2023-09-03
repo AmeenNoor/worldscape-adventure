@@ -22,6 +22,16 @@ def display_statistics():
     print(f"Game lost: {game_lost}")
     print("************************************")
 
+def update_game_statistics(is_won):
+    """
+    Function to increment the total games played and either the total games won 
+    or the total games lost based on the outcome of the game.
+    """
+    game_played += 1
+    if is_won:
+        game_won += 1
+    else:
+        game_lost += 1
 
 def play_game(name_list, name):
     global game_played, game_won, game_lost
@@ -42,8 +52,7 @@ def play_game(name_list, name):
                     print(game.encoded_named) #AUSTRALIA
                     if game.secret_name == game.encoded_named.lower():
                         print("Congratulations, you won the game!")
-                        game_played += 1
-                        game_won += 1
+                        update_game_statistics(True)
                         break
                 else:
                     game.lives -= 1
@@ -52,8 +61,7 @@ def play_game(name_list, name):
     if game.secret_name != game.encoded_named.lower():
         print("Sorry, you lost the game.")
         print(f"The {name} was: {game.secret_name.upper()}")
-        game_played += 1
-        game_lost += 1
+        update_game_statistics(False)
 
     play_again = input("Play another game (y to continue, anything else will stop the game)? ")
     if play_again.lower() != 'y':
