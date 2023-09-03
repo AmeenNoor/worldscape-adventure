@@ -1,6 +1,10 @@
 import random
-
+# Worldscape class
 class Worldscape:
+    """
+    Worldscape class represents a word-guessing game environment. Players can guess letters
+    to unveil a secret word, track their progress, and manage their remaining lives.
+    """
     def __init__(self, name_list):
         """
         Constructor to initialize class attributes.
