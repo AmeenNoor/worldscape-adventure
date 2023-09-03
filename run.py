@@ -85,36 +85,37 @@ def play_game(name_list, name):
 
 def main():
     while True:      
-        print("1. HOW TO PLAY")
-        print("2. PLAY GAME")
-        print("3. GAME STATISTICS")
-        print("4. EXIT")
-        option = int(input("Please choose one the above options\n"))      
-        if option != 1 and option != 2 and option != 3 and option != 4:
-            print("Enter '1' or '2' to choose from the menu!\n")
-        elif option == 1:
+        print("A. HOW TO PLAY")
+        print("B. PLAY GAME")
+        print("C. GAME STATISTICS")
+        print("E. EXIT")
+        option = input("Please choose one the above options\n").lower()     
+        if option != 'a' and option != 'b' and option != 'c' and option != 'e':
+            print("Enter 'a', 'b', 'c' or 'e' to choose from the menu!\n")
+        elif option == 'a':
             display_how_to_play()
-        elif option == 2:
+        elif option == 'b':
             while True:
-                print("1. COUNTRY")
-                print("2. CITY")
-                print("3. LANDMARKS")
-                option_game = int(input("Select game: "))
-                if option != 1 and option != 2:
-                    print("Enter '1' or '2' to choose from the menu to play!")
-                elif option_game == 1:
+                print("A. COUNTRY")
+                print("B. CITY")
+                print("C. LANDMARKS")
+                option_game = input("Select a game to play: (A. Country, B. City, C. Landmarks)\n").lower()
+                if option_game != 'a' and option_game != 'b' and option_game != 'c':
+                    print("Enter 'a', 'b' or 'c' to choose from the menu to play!")
+                    continue
+                elif option_game == 'a':
                     play_game(country_list, "Country")
-                elif option_game == 2:
+                elif option_game == 'b':
                     play_game(city_list, "City")
                 else:
                     play_game(city_list, "Landmarks")
                 play_again = input("Play another game (y to continue, anything else will stop the game)? ")
                 if play_again.lower() != 'y':
                     break
-        elif option == 3:
+        elif option == 'c':
             display_statistics()
         else:
-            print("Thanks")
+            print("Thank you for using the App! Have a great day!")
             break
 
 if __name__ == "__main__":
