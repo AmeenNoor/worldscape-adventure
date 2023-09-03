@@ -397,4 +397,46 @@ city_list = [
     "Harare"
 ]
 
+landmark_list = [
+    "Eiffel Tower",
+    "Statue of Liberty",
+    "Great Wall of China",
+    "Taj Mahal",
+    "Pyramids of Giza",
+    "Machu Picchu",
+    "Colosseum",
+    "Big Ben",
+    "Sydney Opera House",
+    "Christ the Redeemer",
+    "The Louvre",
+    "Stonehenge",
+    "Petra",
+    "Angkor Wat",
+    "Mount Rushmore",
+    "Golden Gate Bridge",
+    "Neuschwanstein Castle",
+    "Acropolis of Athens",
+    "Chichen Itza",
+    "Santorini",
+    "Parthenon",
+    "Kremlin",
+    "Great Sphinx of Giza",
+    "Saint Peters Basilica",
+    "Alhambra",
+    "Mount Everest",
+    "Amazon Rainforest",
+    "Grand Canyon",
+    "Harbour Bridge",
+    "Christchurch Cathedral",
+    "Great Barrier Reef",
+    "Palace of Versailles",
+    "Palace Museum",
+    "Burj Khalifa",
+    "Victoria Falls",
+    "The Sagrada Familia",
+    "Moai Statues",
+    "Potala Palace",
+    "Angel Falls"
+]
+
 
