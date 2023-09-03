@@ -39,15 +39,10 @@ class Worldscape:
         Function validates whether the given input letter is a single
         alphabetical character.
         """
-        try:
-            if len(input_letter) != 1 or not input_letter.isalpha():
-                raise ValueError(f"Please enter a letter, not a number, special character nor string")
-            
-        except ValueError as e:
-            print(f"Invalid input: {e}, please try again.\n")
+        if len(input_letter) != 1 or not input_letter.isalpha():
             return False
-
-        return True
+        else:
+            return True
 
     def is_letter_in_name(self, letter):
         """

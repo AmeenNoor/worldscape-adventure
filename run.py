@@ -92,6 +92,8 @@ def play_game(name_list, name):
                         break   # Exit the game loop if the name is fully guessed.
                 else:
                     game.lives -= 1 # Decrement lives if the guessed letter is not in the secret name.
+        else:
+            print("Invalid input: Please enter a letter, not a number, special character nor string!")
     if game.secret_name != game.encoded_named.lower():
         print("Sorry, you lost the game.")
         print(f"The {name} was: {game.secret_name.upper()}")
@@ -103,26 +105,32 @@ def main():
     through the game menu, select game options, and play the game.
     """
     while True:
-        # Display the main menu options.     
+        # Display the main menu options.
+        print("\n" * 4)   
         print("A. HOW TO PLAY")
         print("B. PLAY GAME")
         print("C. GAME STATISTICS")
         print("E. EXIT")
-        option = input("Please choose one the above options\n").lower()     
-        if option != 'a' and option != 'b' and option != 'c' and option != 'e':
-            print("Enter 'a', 'b', 'c' or 'e' to choose from the menu!\n")
-        elif option == 'a':
+        print("\n" * 3)
+       
+        option = input("Please choose one the above options:\n").lower()
+        if option == 'a':
+            print("\n" * 2) 
             # Calling 'display_how_to_play()' function to display instructions on how to play the game.
             display_how_to_play()
         elif option == 'b':
             while True:
                 # Display game category options.
+                print("\n" * 4) 
                 print("A. COUNTRY")
                 print("B. CITY")
                 print("C. LANDMARKS")
+                print("E. BACK TO MAIN MENU")
+                print("\n" * 3)
+
                 option_game = input("Select a game to play: (A. Country, B. City, C. Landmarks)\n").lower()
-                if option_game != 'a' and option_game != 'b' and option_game != 'c':
-                    print("Enter 'a', 'b' or 'c' to choose from the menu to play!")
+                if option_game != 'a' and option_game != 'b' and option_game != 'c' and option_game != 'e':
+                    print("Enter 'a', 'b', 'c' or 'e' to choose from the menu to play!")
                     continue
                 elif option_game == 'a':
                     # Calling 'play_game()' function to start a game in the "Country" category.
@@ -130,18 +138,29 @@ def main():
                 elif option_game == 'b':
                     # Calling 'play_game()' function to start a game in the "City" category.
                     play_game(city_list, "City")
-                else:
+                elif option_game == 'c':
                     # Calling 'play_game()' function to start a game in the "Landmarks" category.
                     play_game(city_list, "Landmarks")
+                else:
+                    break
                 play_again = input("Play another game (y to continue, anything else will stop the game)? ")
                 if play_again.lower() != 'y':
                     break
         elif option == 'c':
+            print("\n" * 4) 
             # Calling 'display_statistics()' function to display game statistics.
             display_statistics()
-        else:
+            print("\n" * 3) 
+        elif option == 'e':
+            print("\n" * 4) 
             print("Thank you for using the App! Have a great day!")
+            print("\n" * 3)
             break   # Exit the game loop if the user selects 'E' to exit the application.
+        else:
+            print("\n" * 4) 
+            print("Invalid input! Enter 'a', 'b', 'c', or 'e' to choose from the menu.\n")
+            print("\n" * 3) 
+
 
 if __name__ == "__main__":
     main()
