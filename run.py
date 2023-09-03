@@ -1,10 +1,24 @@
 from worldscape import Worldscape
 from names import country_list, city_list, landmark_list
+from os import system, name
 
 # Variables are used to keep track of game statistics:
 game_played = 0
 game_won = 0
 game_lost = 0
+
+def clear_terminal():
+    """
+    Function to clear the terminal screen based on the operating system.
+    The logic for function was adopted from 'How to clear screen in python?' tutorial at
+    https://www.geeksforgeeks.org/clear-screen-python/
+    """
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+    # for mac and linux
+    else:
+        _ = system('clear')
 
 def display_statistics():
     """
