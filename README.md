@@ -281,23 +281,41 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/16gx8
 An open bug refers to a Safari bug that was identified during the testing phase. The bug causes a portion of the navigation menu to appear floating down on certain devices. As a temporary solution, the bug was addressed by removing the "Us" portion from the "Contact Us" section. However, it is important to note that this is only a temporary fix, and the bug should be resolved in a proper and more permanent manner in the future.
 
 ## Deployment
-To deploy the project from GitHub, follow the steps below:
+### Heroku
+To deploy the site on Heroku, follow these steps:
 
-1. Click on the "Settings" tab located near the top-right corner of the repository page (see screenshot below):
+1. Begin by forking the repository: https://github.com/AmeenNoor/worldscape-adventure.
 
 ![Deployment_1](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image1.png)
 
-2. Scroll down the settings page and click "Pages", on the left side (see screenshot below):
+2. Log in to Heroku and click "New." Select "Create new app."(see screenshot below):
 
 ![Deployment_2](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image2.png)
 
-3. In the "Source" dropdown menu, select "main" and click "Save" (see screenshot below):
+3. Choose a unique name for your app, select your desired region, and then click "Create app." (see screenshot below):
 
 ![Deployment_3](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image3.png)
 
-4. Scroll back up to the "GitHub Pages" section, and you will find a URL . (Note: It may take a few moments for GitHub Pages to build and deploy the project.) (see screenshot below):
+4. In the app settings, navigate to the "Config Vars" section. Add a key-value pair where the key is "PORT" and the value is "8000." (see screenshot below):
 
 ![Deployment_4](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image4.png)
+
+5. Under the "Buildpacks" section, click "Add buildpacks." Add "python" and "nodejs" as buildpacks. Ensure that Python is selected first, followed by Node.js. Save your selections. (see screenshot below):
+
+6. In the "Deploy" section, choose "GitHub/Connect to GitHub" as your deployment method. Search for the project on GitHub and connect it. (see screenshot below):
+
+7. Finally, click "Deploy Branch" to deploy your project. (see screenshot below):
+
+### Gitpod
+To work with the project using Gitpod, follow these steps:
+
+1. Fork the repository to create your own copy for personal use.
+
+2. Install the Gitpod extension from the Visual Studio Code marketplace or your preferred extension source.
+
+3. Inside the Gitpod workspace, install the project's requirements by running the command **pip3 install -r requirements.txt** in the terminal.
+
+4. Start the program by running **python3 run.py** in the terminal.
 
 ## Credits
 ### Code
