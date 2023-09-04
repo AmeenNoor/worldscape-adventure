@@ -1,6 +1,7 @@
 from worldscape import Worldscape
 from names import country_list, city_list, landmark_list
 from os import system, name
+from simple_colors import red, green # https://blog.finxter.com/how-to-print-colored-text-in-python/#:~:text=Method%202%3A%20Using%20The%20ANSI,%3B5%3B4m%22)%20.
 
 # Variables are used to keep track of game statistics:
 game_played = 0
@@ -28,9 +29,9 @@ def display_statistics():
     print("************************************")
     print("\nGame Statistics:")
     print("************************************")
-    print(f"Game played: {game_played}")
-    print(f"Game won: {game_won}")
-    print(f"Game lost: {game_lost}")
+    print(f"Game played: {green(game_played)}")
+    print(f"Game won: {green(game_won)}")
+    print(f"Game lost: {red(game_lost)}")
     print("************************************")
 
 def update_game_statistics(is_won):
@@ -78,25 +79,29 @@ def play_game(name_list, name):
     game.encode_name()  # Calling 'encode_name()' function to encode the secret name with dashes.
     while game.lives > 0:
         game.display_output(name)   # Calling 'display_output()' function to display the game information.
+        print("\n" * 2)
         input_letter = input("Guess a letter: \n").lower()  # Prompt the player for a letter guess.
         if game.is_letter_valid(input_letter):  # Calling 'is_letter_valid()' function to check if letter is valid
             if game.is_letter_used_before(input_letter):    # Calling 'is_letter_used_before()' function to check if user entered same letter before.
-                print(f"You have already used: {input_letter}")
+                print(f"{red('You have already used:')} {green(input_letter.capitalize())}")
             else:
                 game.add_used_letter(input_letter)  # Calling 'add_used_letter()' function to record the guessed letter.
                 if game.is_letter_in_name(input_letter):    # Calling 'is_letter_in_name()' function to check if letter in secret name.
                     game.replace_encoded_name_with_guessed_letter(input_letter) # Calling the function to update the encoded name
                     if game.secret_name == game.encoded_named.lower():
-                        print("Congratulations, you won the game!")
+                        print("\n" * 2)
+                        print(green("Congratulations, you won the game!"))
                         update_game_statistics(True)    # Calling 'update_game_statistics' function to update game statistics for a win.  
                         break   # Exit the game loop if the name is fully guessed.
                 else:
                     game.lives -= 1 # Decrement lives if the guessed letter is not in the secret name.
         else:
-            print("Invalid input: Please enter a letter, not a number, special character nor string!")
+            print(red("Invalid input: Please enter a letter, not a number, special character nor string!"))
     if game.secret_name != game.encoded_named.lower():
-        print("Sorry, you lost the game.")
-        print(f"The {name} was: {game.secret_name.upper()}")
+        print("\n" * 2)
+        print(red("Sorry, you lost the game."))
+        print("\n")
+        print(f"The {name} was: {green(game.secret_name.upper())}")
         update_game_statistics(False)   # Calling 'update_game_statistics' function to update game statistics for a loss. 
 
 def main():
@@ -106,14 +111,14 @@ def main():
     """
     while True:
         # Display the main menu options.
-        print("\n" * 4)   
+        print("\n" * 2)   
         print("A. HOW TO PLAY")
         print("B. PLAY GAME")
         print("C. GAME STATISTICS")
         print("E. EXIT")
-        print("\n" * 3)
+        print("\n" * 2)
        
-        option = input("Please choose one the above options:\n").lower()
+        option = input(green("Please choose one of the above options:\n")).lower()
         if option == 'a':
             print("\n" * 2) 
             # Calling 'display_how_to_play()' function to display instructions on how to play the game.
@@ -121,16 +126,16 @@ def main():
         elif option == 'b':
             while True:
                 # Display game category options.
-                print("\n" * 4) 
+                print("\n" * 2) 
                 print("A. COUNTRY")
                 print("B. CITY")
                 print("C. LANDMARKS")
                 print("E. BACK TO MAIN MENU")
-                print("\n" * 3)
+                print("\n" * 2)
 
-                option_game = input("Select a game to play: (A. Country, B. City, C. Landmarks)\n").lower()
+                option_game = input(green("Select a game to play: (A. Country, B. City, C. Landmarks)\n")).lower()
                 if option_game != 'a' and option_game != 'b' and option_game != 'c' and option_game != 'e':
-                    print("Enter 'a', 'b', 'c' or 'e' to choose from the menu to play!")
+                    print(red("Enter 'a', 'b', 'c' or 'e' to choose from the menu to play!"))
                     continue
                 elif option_game == 'a':
                     # Calling 'play_game()' function to start a game in the "Country" category.
@@ -143,23 +148,23 @@ def main():
                     play_game(city_list, "Landmarks")
                 else:
                     break
-                play_again = input("Play another game (y to continue, anything else will stop the game)? ")
+                print("\n" * 2)
+                play_again = input(green("Play another game (y to continue, anything else will stop the game)? "))
                 if play_again.lower() != 'y':
                     break
         elif option == 'c':
-            print("\n" * 4) 
+            print("\n" * 2) 
             # Calling 'display_statistics()' function to display game statistics.
             display_statistics()
-            print("\n" * 3) 
+            print("\n" * 2) 
         elif option == 'e':
-            print("\n" * 4) 
+            print("\n" * 2) 
             print("Thank you for using the App! Have a great day!")
-            print("\n" * 3)
+            print("\n" * 2)
             break   # Exit the game loop if the user selects 'E' to exit the application.
         else:
-            print("\n" * 4) 
-            print("Invalid input! Enter 'a', 'b', 'c', or 'e' to choose from the menu.\n")
-            print("\n" * 3) 
+            print("\n" * 2) 
+            print(red("Invalid input! Enter 'a', 'b', 'c', or 'e' to choose from the menu.\n"))
 
 
 if __name__ == "__main__":
