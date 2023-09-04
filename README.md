@@ -66,6 +66,8 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 
 ### Design
 #### Flow Chart
+
+![Flow Chart](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/flowchart/flowchart.png)
 ## How To Play/Use
 ## Features
 ### Implemented Features
