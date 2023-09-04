@@ -4,7 +4,9 @@
 
 Ameen Noor
 
-## Introductioty.Worldscape Adventure" is an interactive word-guessing game that offers players an engaging and educational experience. In this game, players will have the opportunity to explore and guess names of countries, cities, and landmarks from around the world. The objective is to unveil the hidden name by guessing one letter at a time while managing a limited number of lives. The game is designed to test players' knowledge of geography and improve their letter-guessing skills.
+## Introduction
+
+"Worldscape Adventure" is an interactive word-guessing game that offers players an engaging and educational experience. In this game, players will have the opportunity to explore and guess names of countries, cities, and landmarks from around the world. The objective is to unveil the hidden name by guessing one letter at a time while managing a limited number of lives. The game is designed to test players' knowledge of geography and improve their letter-guessing skills.
 
 ![Am I Responsive](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/responsive/am-i-responsive.png)
 
@@ -18,15 +20,15 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
   - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User storis](#user-storis)
-    - [Design](#design)
-    - [Wireframes](#wireframes)
+  - [How To Play/Use](#how-to-play-Use)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
+  - [Flow Chart](#flow-chart)
+  - [Data Model/ Classes](#data-model-classes)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
-  - [Deployment](#deployment)
   - [Testing](#testing)
     - [Testing User Stories](#testing-user-stories)
     - [Validation Testing](#validation-testing)
@@ -35,6 +37,7 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
     - [Accessibility](#accessibility)
     - [Fixing Bugs](#fixing-bugs)
     - [Open Bugs](#open-bugs)
+  - [Deployment](#deployment)
   - [Credits](#credits)
     - [Code](#code)
     - [Content](#content)
@@ -56,61 +59,47 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 5. As a player, I want a simple "Game Statistics" section that displays the number of games played, games won, and games lost, allowing me to easily track my progress.
 
 
-### Design
-- #### Colors
-  The website's color scheme uses soft and warm tones that make people feel calm and relaxed. There is also a bright color that adds excitement and passion to the design. White is used for the background and text, making everything look clean and simple, plus a deep blue color with a hint of purple, which looks nice. The colors were picked to make the website look good, go well together, and connect with the fitness center's image and the people who visit the site.
-  ![colors](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/design/colors.png)
-- #### Images
-  Images are chosen for the website's home and classes pages to give visual appeal and provide information. fitness image in the header section represents the core theme of the website, showcasing a visually appealing depiction of fitness and exercise. On the classes page, each class is represented by an image that shows the nature of class.
-- #### Typography
-  The 'Rye' font was chosen for the logo part to give a nice appearance and clear visual. 'Nanum Myeongjo' was selected for its readability, ensuring clear body text.
-  
-  <div align="center">
-    <img src="https://github.com/AmeenNoor/activeLife-center/assets/19653847/70e02090-847e-4d60-bbdc-653e96d1efda" alt="rye-font">
-    <img src="https://github.com/AmeenNoor/activeLife-center/assets/19653847/b744b425-ff2e-4824-97ab-2f60627eafcc" alt="nanum-myeongjo-font">
-  </div>
-### Wireframes
-- #### Desktop
-<img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/home-page.png" alt="Desktop 1" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/classes-page.png" alt="Desktop 2" width="270px" height="270px"> <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/contact-us-page.png" alt="Desktop 3" width="270px" height="270px">
-- #### Tablet
-  <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page1.png" alt="Tablet 1" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page2.png" alt="Tablet 2" width="250"> &nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/tablet-page3.png" alt="Tablet 3" width="250">
-- #### Mobile
-  <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page1.png" alt="Mobile 1" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page2.png" alt="Mobile 2" width="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/ux/wireframes/mobile-phone-page3.png" alt="Mobile 3" width="200">
+
+## How To Play/Use
 
 
 
 ## Features
 ### Implemented Features
 
-1. Navigation Bar: The website includes a navigation bar at the top, allowing users to easily navigate between different sections such as "Contact Us," "Classes," and "Home."
+1. Main Menu Navigation: The main menu provides clear options for the user, including "How to Play," "Play Game," "Game Statistics," and "Exit," ensuring easy navigation and interaction.
 
 ![Navigation Bar](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/nav-menu.png)
 
-2. Contact Form: The "Contact Us" section provides a contact form where users can input their name, email, phone number, and message to get in touch with ActiveBeat Center.
+2. Game Instructions ("How to Play"): Users can access comprehensive game instructions, allowing them to quickly understand the game's rules.
 
 ![Contact Form](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/contact-form.png)
 
-3. Google Maps Integration: The website incorporates a Google Maps iframe, providing a map view of the ActiveBeat Center's location.
+3. Game Category Selection: Players can choose from three categories - countries, cities, or landmarks - to guess the name they want to unveil, adding variety and excitement to the gameplay.
 
 ![Google Map](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/google-map.png)
 
-4. Contact Information: The "Contact Us" section also displays the center's address, phone number, and email address, making it easy for users to reach out through different channels.
+4. Interactive Gameplay: During the game, users interact by guessing letters one at a time, with immediate feedback. Correct guesses reveal hidden letters, while incorrect ones deduct lives.
 
 ![Contact Information](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/contact-information.png)
 
-5. Social Media Links: The footer of the website includes links to the center's social media pages, such as Facebook, Instagram, YouTube, Twitter and TikTok, allowing users to connect and stay updated on their activities.
+5. Life System: The game features a life system, with players having eight lives to guess the name correctly. 
 
 ![Social Media Links](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/social-media-icons.png)
 
-6. Thank You page: The website includes a Thank You page that display after users fill out a form. This page confirms the successful submission of the form and displays a message informing users that a team member will be contacting them soon.
+6. Progress Tracking ("Game Statistics"): The "Game Statistics" option allows users to track their progress effortlessly, displaying the number of games played, games won, and games lost.
+
 
 ![Thank You page](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/thankyou-message.png)
 
-7. 404 page: The 404.html page effectively communicates the error of a requested page not found. It displays a warning message to inform the user about the issue and provides a clear button that links to the home page as a solution. This approach helps maintain a positive user experience by guiding users back to the main page and minimizing frustration.
+7. Exit Option: Users can exit the game smoothly by selecting "Exit" from the main menu. The program closes gracefully, providing a hassle-free experience.
+
 
 ![404 page](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/features/e404-page.png)
 
-8. Responsive Design: The website appears to be designed with a responsive layout, ensuring optimal viewing and functionality across different devices and screen sizes.
+8. Feedback and Notifications: The game offers clear feedback and notifications when users guess letters or complete the game, enhancing engagement and providing a satisfying gaming experience.
+
+9. Colorful Text (Simple Colors Library): The game implements colored text to enhance visual appeal and make the user interface more engaging.
 
 ### Future Features
 
@@ -118,6 +107,8 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 
 2. FAQ Page: Create a Frequently Asked Questions (FAQ) page that addresses common inquiries about membership, facilities, classes, trainers, and any other relevant topics. This will provide users with quick and easy access to essential information.
 
+## Flow Chart
+## Data Model/ Classes
 ## Technologies Used
 ### Languages Used
 
@@ -144,25 +135,6 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 
 6. [ChromeVox](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn):
    ChromeVox extension in Google Chrome was used to perform Screen Reader Testing.
-
-## Deployment
-To deploy the project from GitHub, follow the steps below:
-
-1. Click on the "Settings" tab located near the top-right corner of the repository page (see screenshot below):
-
-![Deployment_1](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image1.png)
-
-2. Scroll down the settings page and click "Pages", on the left side (see screenshot below):
-
-![Deployment_2](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image2.png)
-
-3. In the "Source" dropdown menu, select "main" and click "Save" (see screenshot below):
-
-![Deployment_3](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image3.png)
-
-4. Scroll back up to the "GitHub Pages" section, and you will find a URL . (Note: It may take a few moments for GitHub Pages to build and deploy the project.) (see screenshot below):
-
-![Deployment_4](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image4.png)
 
 ## Testing
 ### Testing User Stories
@@ -307,6 +279,25 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/16gx8
   
 ### Open Bugs
 An open bug refers to a Safari bug that was identified during the testing phase. The bug causes a portion of the navigation menu to appear floating down on certain devices. As a temporary solution, the bug was addressed by removing the "Us" portion from the "Contact Us" section. However, it is important to note that this is only a temporary fix, and the bug should be resolved in a proper and more permanent manner in the future.
+
+## Deployment
+To deploy the project from GitHub, follow the steps below:
+
+1. Click on the "Settings" tab located near the top-right corner of the repository page (see screenshot below):
+
+![Deployment_1](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image1.png)
+
+2. Scroll down the settings page and click "Pages", on the left side (see screenshot below):
+
+![Deployment_2](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image2.png)
+
+3. In the "Source" dropdown menu, select "main" and click "Save" (see screenshot below):
+
+![Deployment_3](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image3.png)
+
+4. Scroll back up to the "GitHub Pages" section, and you will find a URL . (Note: It may take a few moments for GitHub Pages to build and deploy the project.) (see screenshot below):
+
+![Deployment_4](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image4.png)
 
 ## Credits
 ### Code
