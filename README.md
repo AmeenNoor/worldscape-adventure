@@ -1,12 +1,10 @@
-# ActiveBeat Center
+# Worldscape Adventure
 
 ## Author
 
 Ameen Noor
 
-## Introduction
-
-ActiveBeat Center is a fitness facility located in Dublin. With a range of classes and activities like Crossfit, yoga, salsa dance, Brazilian Jiu Jitsu, Zumba, Capoeira, and Thai Boxing. The target users of the website are individuals who are interested in active and healthy lifestyle. The website provides information about classes, schedules and memberships. The website is designed to be responsive, ensuring access across all platforms for users interested in joining this inclusive fitness community.
+## Introductioty.Worldscape Adventure" is an interactive word-guessing game that offers players an engaging and educational experience. In this game, players will have the opportunity to explore and guess names of countries, cities, and landmarks from around the world. The objective is to unveil the hidden name by guessing one letter at a time while managing a limited number of lives. The game is designed to test players' knowledge of geography and improve their letter-guessing skills.
 
 ![Am I Responsive](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/responsive/am-i-responsive.png)
 
@@ -47,17 +45,16 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 ## User Experience (UX)
 ### User storis
 
-1. As a user, I want to easily navigate through the website, so I can find the information I need.
+1. As a player, I want to find a clear and understandable main menu with options like "How to Play," "Play Game," "Game Statistics," and "Exit" for easy navigation.
 
-2. As a user, I want to learn about ActiveBeat Center and its offerings, so I can understand if it meets my fitness needs.
+2. As a player, I want to access straightforward instructions when choosing "How to Play" from the main menu, ensuring I can quickly grasp the game's mechanics.
 
-3. As a user, I want to find information about the different membership options, so I can choose the one that suits me best.
+3. As a player, I want a user-friendly "Play Game" menu where I can select whether to guess a country, city, or landmark name, and the ability to return to the main menu.
 
-4. As a user, I want to access the contact information of ActiveBeat Center, so I can get in touch with them if needed.
+4. As a player, I want smooth and engaging gameplay, with clear feedback on guessed letters and an enjoyable way to reveal the hidden name.
 
-5. As a user, I want to explore the different classes offered by ActiveBeat Center, so I can choose the ones that interest me.
+5. As a player, I want a simple "Game Statistics" section that displays the number of games played, games won, and games lost, allowing me to easily track my progress.
 
-6. As a user, I want to easily access the social media pages of ActiveBeat Center, so I can stay updated on their activities and events.
 
 ### Design
 - #### Colors
