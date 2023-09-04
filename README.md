@@ -21,7 +21,7 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
   - [User Experience (UX)](#user-experience-ux)
     - [User storis](#user-storis)
     - [Design](#design)
-  - [How To Play/Use](#how-to-play-use)
+  - [How To Play](#how-to-play)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
@@ -68,7 +68,49 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 #### Flow Chart
 
 ![Flow Chart](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/flowchart/flowchart.png)
-## How To Play/Use
+
+
+## How To Play
+
+1. **Main Menu**:
+    - When you start the game, you'll see the main menu with four options: "HOW TO PLAY," "PLAY GAME," "GAME STATISTICS," and "EXIT."
+    - Use the keyboard to select the option you want by entering the corresponding letter (e.g., 'A' for "HOW TO PLAY").
+
+2. **How to Play**:
+    - If you're new to the game or need a refresher, choose "HOW TO PLAY" from the main menu ('A').
+    - Read the provided instructions to understand the game rules and how to navigate the game.
+
+3. **Play Game**:
+    - To start playing, select "PLAY GAME" from the main menu ('B').
+    - You will then have the option to choose a game category: "COUNTRY," "CITY," or "LANDMARKS." Enter the corresponding letter to make your choice ('A' for "COUNTRY," 'B' for "CITY," or 'C' for "LANDMARKS").
+
+4. **Gameplay**:
+    - You'll be presented with a hidden name from your chosen category, with the letters initially replaced by dashes.
+    - You have 8 lives to guess the name correctly.
+    - Guess one letter at a time by entering a single alphabetical character.
+    - If the letter you guess is in the name, it will be revealed. If not, you'll lose a life.
+    - Continue guessing letters until you either guess the entire name correctly or run out of lives.
+
+5. **Winning the Game**:
+    - If you correctly guess the name, congratulations, you win the game!
+    - The game will display a winning message.
+
+6. **Losing the Game**:
+    - If you run out of lives without guessing the name correctly, you lose the game.
+    - The game will display a losing message and reveal the correct answer.
+
+7. **Play Again**:
+    - After a game, you have the option to play another round within the same category.
+    - If you choose to play again, you can keep guessing new names to improve your skills.
+
+8. **Game Statistics**:
+    - You can view your game statistics at any time by selecting "GAME STATISTICS" from the main menu ('C').
+    - This option shows you the number of games played, games won, and games lost.
+
+9. **Exiting the Game**:
+    - To exit the game, select "EXIT" from the main menu ('E').
+    
+
 ## Features
 ### Implemented Features
 
