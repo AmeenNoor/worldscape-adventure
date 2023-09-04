@@ -2,6 +2,7 @@ from worldscape import Worldscape
 from names import country_list, city_list, landmark_list
 from os import system, name
 from simple_colors import red, green # https://blog.finxter.com/how-to-print-colored-text-in-python/#:~:text=Method%202%3A%20Using%20The%20ANSI,%3B5%3B4m%22)%20.
+import pyfiglet
 
 # Variables are used to keep track of game statistics:
 game_played = 0
@@ -109,6 +110,10 @@ def main():
     Function serves as the primary entry point for the game, allowing users to navigate
     through the game menu, select game options, and play the game.
     """
+    print("\n" * 2)
+    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=120 ))
+    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=120 ))
+    print("\n" * 2)
     while True:
         # Display the main menu options.
         print("\n" * 2)   
