@@ -20,7 +20,7 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
   - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User storis](#user-storis)
-  - [How To Play/Use](#how-to-play-Use)
+  - [How To Play/Use](#how-to-play-use)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
