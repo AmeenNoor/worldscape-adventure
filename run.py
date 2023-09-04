@@ -89,7 +89,7 @@ def play_game(name_list, name):
                 game.add_used_letter(input_letter)  # Calling 'add_used_letter()' function to record the guessed letter.
                 if game.is_letter_in_name(input_letter):    # Calling 'is_letter_in_name()' function to check if letter in secret name.
                     game.replace_encoded_name_with_guessed_letter(input_letter) # Calling the function to update the encoded name
-                    if game.secret_name == game.encoded_named.lower():
+                    if game.secret_name == game.encoded_name.lower():
                         print("\n" * 2)
                         print(green("Congratulations, you won the game!"))
                         update_game_statistics(True)    # Calling 'update_game_statistics' function to update game statistics for a win.  
@@ -98,7 +98,7 @@ def play_game(name_list, name):
                     game.lives -= 1 # Decrement lives if the guessed letter is not in the secret name.
         else:
             print(red("Invalid input: Please enter a letter, not a number, special character nor string!"))
-    if game.secret_name != game.encoded_named.lower():
+    if game.secret_name != game.encoded_name.lower():
         print("\n" * 2)
         print(red("Sorry, you lost the game."))
         print("\n")
@@ -111,8 +111,8 @@ def main():
     through the game menu, select game options, and play the game.
     """
     print("\n" * 2)
-    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=120 ))
-    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=120 ))
+    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=60 ))
+    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=60 ))
     print("\n" * 2)
     while True:
         # Display the main menu options.

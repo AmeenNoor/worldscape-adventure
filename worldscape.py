@@ -11,7 +11,7 @@ class Worldscape:
         """
         self.name_list = name_list
         self.secret_name = ""
-        self.encoded_named = ""
+        self.encoded_name = ""
         self.letters_used = []
         self.lives = 8
 
@@ -29,10 +29,10 @@ class Worldscape:
         """
         for x in self.secret_name:
             if (x == " "):
-                self.encoded_named += " "
+                self.encoded_name += " "
             else:
-                self.encoded_named += "-"
-        return self.encoded_named
+                self.encoded_name += "-"
+        return self.encoded_name
 
     def is_letter_valid(self, input_letter):
         """
@@ -78,9 +78,9 @@ class Worldscape:
             if self.secret_name[i] == letter:
                 new_encoded_name += letter.capitalize()
             else:
-                new_encoded_name += self.encoded_named[i]
-        self.encoded_named = new_encoded_name
-        return self.encoded_named
+                new_encoded_name += self.encoded_name[i]
+        self.encoded_name = new_encoded_name
+        return self.encoded_name
 
     def display_output(self, name):
         """
@@ -90,7 +90,7 @@ class Worldscape:
         """
         print("************************************")
         print(f"Lives: {self.lives}\n")
-        print(f"{name}: {self.encoded_named}\n")
+        print(f"{name}: {self.encoded_name}\n")
         print(f"Letters used: {', '.join(self.letters_used)}\n")
         print("************************************")
 

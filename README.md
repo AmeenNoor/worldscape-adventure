@@ -20,12 +20,15 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
   - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User storis](#user-storis)
+    - [Design](#design)
   - [How To Play/Use](#how-to-play-use)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
-  - [Flow Chart](#flow-chart)
   - [Data Model/ Classes](#data-model-classes)
+    - [Worldscape](#worldscape)
+    - [Main Program](#main-program)
+    - [Data Flow](#data-flow)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
@@ -61,7 +64,8 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 5. As a player, I want a simple "Game Statistics" section that displays the number of games played, games won, and games lost, allowing me to easily track my progress.
 
 
-
+### Design
+#### Flow Chart
 ## How To Play/Use
 ## Features
 ### Implemented Features
@@ -102,14 +106,85 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 
 ### Future Features
 
-1. High Score Tracking: Implement a feature to ask the user for their name and record all game statistics in an Excel file, allowing players to view high scores and compete for the top spot.
+1. **High Score Tracking**: Implement a feature to ask the user for their name and record all game statistics in an Excel file, allowing players to view high scores and compete for the top spot.
 
-2. Difficulty Levels: Add the option for players to choose between different difficulty levels, such as easy and difficult.
+2. **Difficulty Levels**: Add the option for players to choose between different difficulty levels, such as easy and difficult.
 
-3. Dynamic Word Generation: Instead of using a constant list of words, connect to an API for word generation, to ensure every game is an exciting adventure.
+3. **Dynamic Word Generation**: Instead of using a constant list of words, connect to an API for word generation, to ensure every game is an exciting adventure.
 
-## Flow Chart
 ## Data Model/ Classes
+### Worldscape
+
+The Worldscape class represents a word-guessing game environment, allowing players to guess letters to unveil a secret word, track their progress, and manage their remaining lives.
+
+**Attributes:**
+
+1. **name_list**: A list of names (countries, cities, landmarks) from which the secret name will be randomly selected.
+
+2. **secret_name**: The current secret name that the player needs to guess.
+
+3. **encoded_name**: The secret name encoded with dashes, where each letter is initially hidden.
+
+4. **letters_used**: A list of letters that the player has already guessed.
+
+5. **lives**: The number of remaining lives the player has.
+
+**Functions:**
+
+1. **__init__(self, name_list)**: Constructor method to initialize class attributes.
+    - **name_list**: The list of names provided as an argument.
+    - **Initializes** secret_name and encoded_named as empty strings.
+    - **Initializes** letters_used as an empty list.
+    - **Initializes** lives to 8.
+
+2. **generate_secret_name(self)**: Randomly selects a secret name from the provided **name_list**.
+    - Returns the generated **secret name**.
+
+4. **encode_name(self)**: Encodes the secret name by replacing its characters with dashes.
+    - If the country name contains spaces, spaces are displayed as spaces, and other letters are displayed as dashes.
+    - Returns the **encoded name**.
+
+5. **is_letter_valid(self, input_letter)**: Validates whether the given input letter is a single alphabetical character.
+    - Returns **True** if the input is valid, **False** otherwise.
+
+6. **is_letter_in_name(self, letter)**: Determines whether a given letter is present in the secret name.
+    - Returns **True** if the letter is in the name, **False** otherwise.
+
+7. **add_used_letter(self, letter)**: Takes a letter entered by the user and adds it to the letters_used list.
+    - Returns the updated list of **used letters**.
+
+8. **is_letter_used_before(self, letter)**: Checks whether a letter has been previously entered by the user.
+    - Returns **True** if the letter has been used before, **False** otherwise.
+
+9. **replace_encoded_name_with_guessed_letter(self, letter)**: Replaces dashes in the encoded name with the correct guessed letter.
+    - Returns the updated **encoded name**.
+
+10. **display_output(self, name)**: Displays game information to the user, including the number of remaining lives, the guessed letters and dashes in the secret name, and the list of letters that have been used before.
+
+### Main Program
+
+The main program consists of various functions and the main function to facilitate gameplay and user interaction.
+
+**Functions**:
+
+1. **clear_terminal()**: Clears the terminal screen based on the operating system (Windows or Mac/Linux).
+
+2. **display_statistics()**: Displays statistics related to the user's gameplay, including the number of games played, games won, and games lost.
+
+3. **update_game_statistics(is_won)**: Increments the total games played and either the total games won or the total games lost based on the outcome of the game.
+
+4. **display_how_to_play()**: Provides step-by-step instructions on how to play the game.
+
+5. **play_game(name_list, name)**: Initiates and manages a game session, allowing the player to guess letters and attempt to uncover the secret name.
+
+6. **main()**: Serves as the primary entry point for the game, allowing users to navigate through the game menu, select game options, and play the game.
+
+### Data Flow
+
+- The **Worldscape** class handles game-specific data, such as the secret name, lives, and encoded name.
+
+- The **main program** manages user interaction, displays menus, and calls the appropriate functions of the Worldscape class based on user input.
+
 ## Technologies Used
 ### Languages Used
 
