@@ -20,7 +20,7 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
   - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User storis](#user-storis)
-  - [How To Play/Use](#how-to-play-use)
+  - [How To Play/Use](#how-to-play/use)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
@@ -112,14 +112,12 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 ## Technologies Used
 ### Languages Used
 
-1. HTML
-   
-2. CSS
+1. Python
    
 ### Frameworks, Libraries and Programs Used
 
-1. [Balsamiq](https://balsamiq.com/):
-   Balsamiq was used to create the mockup design for the website.
+1. [Heroku](https://www.heroku.com/):
+   Heroku was employed for project deployment.
 
 2. [GitHub](https://github.com/):
    GitHub was utilized to store the project file and folder remotely.
@@ -127,14 +125,14 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 3. [Git](https://git-scm.com/):
    Git was used in the Gitpod terminal to add, commit, and then push the changes to GitHub.
 
-4. [Font Awesome](https://fontawesome.com/):
-   Font Awesome was used to incorporate social media and contact information icons, including icons for Facebook, Twitter, Youtube, Instagram, TikTok, email and phone number, as well as the address.
+4. [CI's pep8 tool](https://pep8ci.herokuapp.com/):
+   CI's pep8 tool was used to ensure the code is valid and follows proper indentation
 
-5. [Google Fonts](https://fonts.google.com/):
-   Google fonts were used to import 'nanum myeongjo' & 'Rye' fonts into the style.css file which are used on all pages throughout the project.
+5. [pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/):
+   Pyfiglet was used to stylized ASCII art text for titles and banners.
 
-6. [ChromeVox](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn):
-   ChromeVox extension in Google Chrome was used to perform Screen Reader Testing.
+6. [simple-colors](https://pypi.org/project/simple-colors/):
+   Simple-colors was used to colored text.
 
 ## Testing
 ### Testing User Stories
@@ -286,25 +284,43 @@ To deploy the site on Heroku, follow these steps:
 
 1. Begin by forking the repository: https://github.com/AmeenNoor/worldscape-adventure.
 
-![Deployment_1](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image1.png)
+2. Log in to Heroku and click "New." Select "Create new app."(see screenshots below):
 
-2. Log in to Heroku and click "New." Select "Create new app."(see screenshot below):
+![Deployment_1](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image1.png)
 
-![Deployment_2](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image2.png)
+![Deployment_2](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image2.png)
 
 3. Choose a unique name for your app, select your desired region, and then click "Create app." (see screenshot below):
 
-![Deployment_3](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image3.png)
+![Deployment_3](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image3.png)
 
-4. In the app settings, navigate to the "Config Vars" section. Add a key-value pair where the key is "PORT" and the value is "8000." (see screenshot below):
+4. In the app settings, navigate to the "Config Vars" section. Add a key-value pair where the key is "PORT" and the value is "8000." (see screenshots below):
 
-![Deployment_4](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/deployment/deployment-image4.png)
+![Deployment_4](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image4.png)
 
-5. Under the "Buildpacks" section, click "Add buildpacks." Add "python" and "nodejs" as buildpacks. Ensure that Python is selected first, followed by Node.js. Save your selections. (see screenshot below):
+![Deployment_5](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image5.png)
 
-6. In the "Deploy" section, choose "GitHub/Connect to GitHub" as your deployment method. Search for the project on GitHub and connect it. (see screenshot below):
+5. Under the "Buildpacks" section, click "Add buildpacks." Add "python" and "nodejs" as buildpacks. Ensure that Python is selected first, followed by Node.js. Save your selections. (see screenshots below):
+
+![Deployment_6](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image6.png)
+
+![Deployment_7](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image7.png)
+
+![Deployment_8](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image8.png)
+
+6. In the "Deploy" section, choose "GitHub/Connect to GitHub" as your deployment method. Search for the project on GitHub and connect it. (see screenshots below):
+
+![Deployment_9](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image9.png)
+
+![Deployment_10](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image10.png)
+
+![Deployment_11](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image11.png)
 
 7. Finally, click "Deploy Branch" to deploy your project. (see screenshot below):
+
+![Deployment_12](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image12.png)
+
+![Deployment_13](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/deployment/deployment-image13.png)
 
 ### Gitpod
 To work with the project using Gitpod, follow these steps:

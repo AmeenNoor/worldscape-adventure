@@ -1,7 +1,7 @@
 from worldscape import Worldscape
 from names import country_list, city_list, landmark_list
 from os import system, name
-from simple_colors import red, green # https://blog.finxter.com/how-to-print-colored-text-in-python/#:~:text=Method%202%3A%20Using%20The%20ANSI,%3B5%3B4m%22)%20.
+from simple_colors import red, green # https://pypi.org/project/simple-colors/
 import pyfiglet
 
 # Variables are used to keep track of game statistics:
