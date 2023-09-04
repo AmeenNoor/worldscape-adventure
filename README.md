@@ -20,7 +20,7 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
   - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User storis](#user-storis)
-  - [How To Play/Use](#how-to-play/use)
+  - [How To Play/Use](#how-to-play-use)
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
@@ -38,6 +38,8 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
     - [Fixing Bugs](#fixing-bugs)
     - [Open Bugs](#open-bugs)
   - [Deployment](#deployment)
+    - [Heroku](#heroku)
+    - [Gitpod](#gitpod)
   - [Credits](#credits)
     - [Code](#code)
     - [Content](#content)
@@ -61,9 +63,6 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 
 
 ## How To Play/Use
-
-
-
 ## Features
 ### Implemented Features
 
@@ -103,9 +102,11 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 
 ### Future Features
 
-1. Testimonial Page: Create a dedicated page where users can view ratings, reviews, and feedback from current and past members. This will help users compare the ActiveBeat Center to other fitness centers and make decisions.
+1. High Score Tracking: Implement a feature to ask the user for their name and record all game statistics in an Excel file, allowing players to view high scores and compete for the top spot.
 
-2. FAQ Page: Create a Frequently Asked Questions (FAQ) page that addresses common inquiries about membership, facilities, classes, trainers, and any other relevant topics. This will provide users with quick and easy access to essential information.
+2. Difficulty Levels: Add the option for players to choose between different difficulty levels, such as easy and difficult.
+
+3. Dynamic Word Generation: Instead of using a constant list of words, connect to an API for word generation, to ensure every game is an exciting adventure.
 
 ## Flow Chart
 ## Data Model/ Classes
