@@ -299,9 +299,9 @@ The website was tested on various browsers and devices to ensure compatibility a
         <img src="https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/testing/safari-iphone-7-plus.jpeg" alt="Safari-iPhone 7 Plus" width="400px" height="600px">
     </div>
 ### Manual Testing
-View manual testing results [here!](https://docs.google.com/spreadsheets/d/16gx87X14G3iNKbtTt4qVKPlQUPKv61Ia/edit?usp=sharing&ouid=114632238804209226224&rtpof=true&sd=true)
+View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XAiSfxOVXIjn1UhXu-7vf35j0WS67IYKl_2fVBWd0/edit#gid=0)
 
-![Manual Testing Image](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/testing/manual-testing-image.png)
+![Manual Testing Image]((https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/manual-testing-image.png)
 ### Accessibility
 - #### Accessibility Audits
   Accessibility testing was done on the website, and Lighthouse, a testing tool, was used for this purpose. The Lighthouse report, displayed in the provided screenshot, indicates a successful outcome of the accessibility testing.
