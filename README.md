@@ -67,6 +67,7 @@ Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the websit
 ### Design
 #### Flow Chart
 
+
 ![Flow Chart](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/flowchart/flow-chart.png)
 
 
@@ -254,6 +255,9 @@ The main program consists of various functions and the main function to facilita
 6. [simple-colors](https://pypi.org/project/simple-colors/):
    Simple-colors was used to colored text.
 
+7. [draw.io](https://app.diagrams.net/):
+   draw.io was used to craft the flowchart
+
 ## Testing
 ### Validation Testing
 
@@ -301,7 +305,7 @@ The website was tested on various browsers and devices to ensure compatibility a
 ### Manual Testing
 View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XAiSfxOVXIjn1UhXu-7vf35j0WS67IYKl_2fVBWd0/edit#gid=0)
 
-![Manual Testing Image]((https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/manual-testing-image.png)
+![Manual Testing Image](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/manual-testing-image.png)
 ### Accessibility
 - #### Accessibility Audits
   Accessibility testing was done on the website, and Lighthouse, a testing tool, was used for this purpose. The Lighthouse report, displayed in the provided screenshot, indicates a successful outcome of the accessibility testing.
@@ -414,39 +418,22 @@ To work with the project using Gitpod, follow these steps:
 ## Credits
 ### Code
 
-1. The GitHub repository was created using the "Code Institute template." You can find the template at: [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template).
+1. The GitHub repository was created using the "Code Institute template." You can find the template at: [Code Institute Template](https://github.com/Code-Institute-Org/p3-template).
 
-2. The logo, navigation menu, and footer section have been adopted from the "love-running" project. You can view the project at: [Love Running](https://ameennoor.github.io/love-running/).
-   
-3. The classes display utilizes the concept of Flexbox, which was adopted from the W3Schools CSS Flexbox tutorial. You can learn more about Flexbox here: [W3Schools - CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp).
+2. The logic for **clear_terminal()** function was adopted from [How to clear screen in python?](https://www.geeksforgeeks.org/clear-screen-python/).
 
 ### Content
 
-1. The membership section on the home page has been rephrased and adapted from Swan Leisure's website. You can find their website at: [Swan Leisure](https://www.swanleisure.ie/).
-   
-2. The content on the classes page has been rephrased and adopted from "Blue Nile Life Style." You can find more information about them on their Facebook page: [Blue Nile Life Style](https://www.facebook.com/BlueFitness82/).
+1. **List of Countries:** obtained from [Worldometers](https://www.worldometers.info/).
 
-3. The 404 Error message has been adopted from an article titled "20 Best Free 404 Error Page Templates 2023" by Aigars Silkalns, published on January 7, 2023. You can read the article here: [20 Best Free 404 Error Page Templates 2023](https://colorlib.com/wp/free-404-error-page-templates/).
+2. **List of Cities:** obtained from [World Maps](https://ontheworldmap.com/all/cities/).
+
+3. **List of Landmarks:** obtained from [Destguides](https://www.destguides.com/famous-landmarks).
    
 ### Media
 
-1. The fitness image on the home page is sourced from [Pikwizard](https://pikwizard.com/).
+3. The responsive image is generated using the [Am I Responsive](https://ui.dev/amiresponsive) tool.
 
-2. The yoga, Zumba, and salsa dance images on the classes page are sourced from [Freepik](https://www.freepik.com/).
-
-3. The Jiu Jitsu and Thai Boxing images on the classes page are sourced from [Unsplash](https://unsplash.com/).
-
-4. The Capoeira image on the classes page is sourced from [PxHere](https://pxhere.com/).
-
-5. The embedded map on the contact page is sourced from Google Maps.
-
-6. The color scheme image is sourced from [Coolors](https://coolors.co/).
-
-7. The social media icons are sourced from [FontAwesome](https://fontawesome.com/).
-
-8. The fonts 'Rye' and 'Nanum Myeongjo' are sourced from [Google Fonts](https://fonts.google.com/).
-
-9. The responsive image is generated using the [Am I Responsive](https://ui.dev/amiresponsive) tool.
 
 ### Mentor
 Huge thanks to my mentor "Malia Havlicek" for her support and guidance.

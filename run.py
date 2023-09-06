@@ -111,8 +111,8 @@ def main():
     through the game menu, select game options, and play the game.
     """
     print("\n" * 2)
-    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=60 ))
-    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=60 ))
+    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=100 ))
+    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=100 ))
     print("\n" * 2)
     while True:
         # Display the main menu options.
