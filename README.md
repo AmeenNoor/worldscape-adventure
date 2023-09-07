@@ -10,7 +10,7 @@ Ameen Noor
 
 ![Am I Responsive](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/responsive/am-i-responsive.png)
 
-Click [here](https://ameennoor.github.io/activeBeat-center/) to visit the website.
+Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit the website.
 
 ## Table of Contents
 
@@ -305,7 +305,7 @@ The website was tested on various browsers and devices to ensure compatibility a
 ### Manual Testing
 View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XAiSfxOVXIjn1UhXu-7vf35j0WS67IYKl_2fVBWd0/edit#gid=0)
 
-![Manual Testing Image](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/manual-testing-image.png)
+![Manual Testing Image](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/manual-testing.png)
 ### Accessibility
 - #### Accessibility Audits
   Accessibility testing was done on the website, and Lighthouse, a testing tool, was used for this purpose. The Lighthouse report, displayed in the provided screenshot, indicates a successful outcome of the accessibility testing.
@@ -323,26 +323,20 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
 ### Fixing Bugs
 - #### Validation Bug
   
-  1. Home Page:
-  The bug in the code was related to a warning raised by the HTML validator. The warning indicated that a section lacked a heading, and suggested using heading elements `<h2>` to `<h6>` or using a `<div>` instead. To fix the bug, the `<section>` tag was replaced with a `<div>` tag in the "FITNESS IMAGE SECTION" part of the code.
+  1. **worldscape.py**:
+  Indentation issues in the 'worldscape.py' file have been fixed.
 
-  ![Home Page Bug Fixed](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/testing/bug-fixed-home-page.png)
+  ![Worldscape Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/names-fixed.png)
 
-  2. Bookclass Page:
-  The bug was caused by incomplete and empty `<option>` elements within the `<select>` tags in the HTML code. The issue was resolved by adding the `disabled` and `selected` attributes to the first `<option>` element in each `<select>` tag.
+  2. **names.py**:
+  Indentation issues in the 'names.py' file have been fixed.
 
-  ![Bookclass Page Bug Fixed](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/testing/bug-fixed-bookclass-page.png)
+  ![Names Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/names-fixed.png) 
   
-  3. Thankyou Page:
-  The bug in the code was related to a warning raised by the HTML validator. The warning indicated that a section lacked a heading, and suggested using heading elements `<h2>` to `<h6>` or using a `<div>` instead. To fix the bug, the `<section>` tag was replaced with a `<div>` tag in the "THANK YOU MESSAGE SECTION" part of the code.
+  3. **run.py**:
+  Indentation issues in the 'run.py' file have been fixed.
 
-
-  ![Thankyou Page Bug Fixed](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/testing/bug-fixed-thankyou-page.png)
-
-  4. 404 Page:
-  The bug in the code was related to a warning raised by the HTML validator. The warning indicated that a section lacked a heading, and suggested using heading elements `<h2>` to `<h6>` or using a `<div>` instead. To fix the bug, the `<section>` tag was replaced with a `<div>` tag in the "404 WARNING MESSAGE SECTION" part of the code.
-
-  ![404 Page Bug Fixed](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/testing/bug-fixed-404-page.png)
+  ![Run Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/names-fixed.png)
 
 - #### Safari Bug
   The bug was; during the testing phase, an issue was identified where a portion of the navigation menu appeared to float down on these devices. As a temporary solution, the bug was fixed by removing the "Us" portion from the "Contact Us" section.
