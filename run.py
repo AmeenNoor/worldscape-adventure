@@ -2,7 +2,7 @@ from worldscape import Worldscape
 from names import country_list, city_list, landmark_list
 from os import system, name
 from simple_colors import red, green # https://pypi.org/project/simple-colors/
-import pyfiglet
+import pyfiglet as pyg
 
 # Variables are used to keep track of game statistics:
 game_played = 0
@@ -90,8 +90,7 @@ def play_game(name_list, name):
                 if game.is_letter_in_name(input_letter):    # Calling 'is_letter_in_name()' function to check if letter in secret name.
                     game.replace_encoded_name_with_guessed_letter(input_letter) # Calling the function to update the encoded name
                     if game.secret_name == game.encoded_name.lower():
-                        print("\n" * 2)
-                        print(green("Congratulations, you won the game!"))
+                        print(green("Congratulations, you won the game!\n"))
                         update_game_statistics(True)    # Calling 'update_game_statistics' function to update game statistics for a win.  
                         break   # Exit the game loop if the name is fully guessed.
                 else:
@@ -99,8 +98,7 @@ def play_game(name_list, name):
         else:
             print(red("Invalid input: Please enter a letter, not a number, special character nor string!"))
     if game.secret_name != game.encoded_name.lower():
-        print("\n" * 2)
-        print(red("Sorry, you lost the game."))
+        print(red("Sorry, you lost the game.\n"))
         print("\n")
         print(f"The {name} was: {green(game.secret_name.upper())}")
         update_game_statistics(False)   # Calling 'update_game_statistics' function to update game statistics for a loss. 
@@ -111,8 +109,8 @@ def main():
     through the game menu, select game options, and play the game.
     """
     print("\n" * 2)
-    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=100 ))
-    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=100 ))
+    print(pyg.figlet_format("Worldscape", font = "doh", width = 200))
+    print(pyg.figlet_format("Adventure", font = "doh", width = 200))
     print("\n" * 2)
     while True:
         # Display the main menu options.
@@ -125,10 +123,12 @@ def main():
        
         option = input(green("Please choose one of the above options:\n")).lower()
         if option == 'a':
+            clear_terminal()
             print("\n" * 2) 
             # Calling 'display_how_to_play()' function to display instructions on how to play the game.
             display_how_to_play()
         elif option == 'b':
+            clear_terminal()
             while True:
                 # Display game category options.
                 print("\n" * 2) 
@@ -140,34 +140,42 @@ def main():
 
                 option_game = input(green("Select a game to play: (A. Country, B. City, C. Landmarks)\n")).lower()
                 if option_game != 'a' and option_game != 'b' and option_game != 'c' and option_game != 'e':
+                    clear_terminal()
                     print(red("Enter 'a', 'b', 'c' or 'e' to choose from the menu to play!"))
                     continue
                 elif option_game == 'a':
+                    clear_terminal()
                     # Calling 'play_game()' function to start a game in the "Country" category.
                     play_game(country_list, "Country")
                 elif option_game == 'b':
+                    clear_terminal()
                     # Calling 'play_game()' function to start a game in the "City" category.
                     play_game(city_list, "City")
                 elif option_game == 'c':
+                    clear_terminal()
                     # Calling 'play_game()' function to start a game in the "Landmarks" category.
                     play_game(city_list, "Landmarks")
                 else:
                     break
+                clear_terminal()
                 print("\n" * 2)
-                play_again = input(green("Play another game (y to continue, anything else will stop the game)? "))
+                play_again = input(green("Play another game (y to continue, anything else will stop the game)?\n"))
                 if play_again.lower() != 'y':
                     break
         elif option == 'c':
+            clear_terminal()
             print("\n" * 2) 
             # Calling 'display_statistics()' function to display game statistics.
             display_statistics()
             print("\n" * 2) 
         elif option == 'e':
+            clear_terminal()
             print("\n" * 2) 
             print("Thank you for using the App! Have a great day!")
             print("\n" * 2)
             break   # Exit the game loop if the user selects 'E' to exit the application.
         else:
+            clear_terminal()
             print("\n" * 2) 
             print(red("Invalid input! Enter 'a', 'b', 'c', or 'e' to choose from the menu.\n"))
 
