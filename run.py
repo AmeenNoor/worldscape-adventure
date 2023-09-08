@@ -79,6 +79,7 @@ def play_game(name_list, name):
     game.generate_secret_name().lower() # Calling 'generate_secret_name()' function to generate a secret name.
     game.encode_name()  # Calling 'encode_name()' function to encode the secret name with dashes.
     while game.lives > 0:
+        clear_terminal()
         game.display_output(name)   # Calling 'display_output()' function to display the game information.
         print("\n" * 2)
         input_letter = input("Guess a letter: \n").lower()  # Prompt the player for a letter guess.
@@ -90,14 +91,17 @@ def play_game(name_list, name):
                 if game.is_letter_in_name(input_letter):    # Calling 'is_letter_in_name()' function to check if letter in secret name.
                     game.replace_encoded_name_with_guessed_letter(input_letter) # Calling the function to update the encoded name
                     if game.secret_name == game.encoded_name.lower():
+                        clear_terminal()
                         print(green("Congratulations, you won the game!\n"))
                         update_game_statistics(True)    # Calling 'update_game_statistics' function to update game statistics for a win.  
                         break   # Exit the game loop if the name is fully guessed.
                 else:
                     game.lives -= 1 # Decrement lives if the guessed letter is not in the secret name.
         else:
+            clear_terminal()
             print(red("Invalid input: Please enter a letter, not a number, special character nor string!"))
     if game.secret_name != game.encoded_name.lower():
+        clear_terminal()
         print(red("Sorry, you lost the game.\n"))
         print("\n")
         print(f"The {name} was: {green(game.secret_name.upper())}")
@@ -158,7 +162,7 @@ def main():
                 else:
                     break
                 clear_terminal()
-                print("\n" * 2)
+                print("\n")
                 play_again = input(green("Play another game (y to continue, anything else will stop the game)?\n"))
                 if play_again.lower() != 'y':
                     break
