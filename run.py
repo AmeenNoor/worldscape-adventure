@@ -147,8 +147,9 @@ def main():
     Function serves as the primary entry point for the game,allowing users
     to navigate through the game menu, select game options, and play the game.
     """
-    print("\n" * 2)
-    print(green(pyfiglet.figlet_format("Worldscape", font="banner3-D")))
+    print("\n")
+    print(green(pyfiglet.figlet_format("Welcome To", font="banner3-D", width=110)))
+    print(green(pyfiglet.figlet_format("Worldscape", font="banner3-D", width=110)))
     print("\n")
     print(green("Get ready to explore the world and test your knowledge!\n"))
     while True:

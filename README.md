@@ -326,7 +326,7 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
   1. **worldscape.py**:
   Indentation issues in the 'worldscape.py' file have been fixed.
 
-  ![Worldscape Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/names-fixed.png)
+  ![Worldscape Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/worldscape-fixed.png)
 
   2. **names.py**:
   Indentation issues in the 'names.py' file have been fixed.
@@ -336,7 +336,7 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
   3. **run.py**:
   Indentation issues in the 'run.py' file have been fixed.
 
-  ![Run Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/names-fixed.png)
+  ![Run Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/run-fixed.png)
 
 - #### Safari Bug
   The bug was; during the testing phase, an issue was identified where a portion of the navigation menu appeared to float down on these devices. As a temporary solution, the bug was fixed by removing the "Us" portion from the "Contact Us" section.
