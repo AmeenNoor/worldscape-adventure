@@ -77,12 +77,14 @@ def play_game(name_list, name):
     game.encode_name()  # Calling 'encode_name()' function to encode the secret name with dashes.
     clear_terminal()
     while game.lives > 0:
+        print("\n" * 2)
         game.display_output(name)   # Calling 'display_output()' function to display the game information.
         print("\n" * 2)
-        input_letter = input("Guess a letter: \n").lower()  # Prompt the player for a letter guess.
+        input_letter = input("Guess a letter: \n\n").lower()  # Prompt the player for a letter guess.
         clear_terminal()
         if game.is_letter_valid(input_letter):  # Calling 'is_letter_valid()' function to check if letter is valid
             if game.is_letter_used_before(input_letter):    # Calling 'is_letter_used_before()' function to check if user entered same letter before.
+                print("\n")
                 print(f"{red('You have already used:')} {green(input_letter.capitalize())}\n")
             else:
                 game.add_used_letter(input_letter)  # Calling 'add_used_letter()' function to record the guessed letter.
@@ -96,9 +98,11 @@ def play_game(name_list, name):
                 else:
                     game.lives -= 1 # Decrement lives if the guessed letter is not in the secret name.
         else:
+            print("\n")
             print(red("Invalid input: Please enter a letter, not a number, special character nor string!\n"))
     if game.secret_name != game.encoded_name.lower():
         clear_terminal()
+        print("\n" * 2)
         print(red("Sorry, you lost the game."))
         print("\n")
         print(f"The {name} was: {green(game.secret_name.upper())}\n")
@@ -110,7 +114,7 @@ def main():
     through the game menu, select game options, and play the game.
     """
     print("\n" * 2)
-    print(green(pyfiglet.figlet_format("Welcome", font="banner3-D")))
+    print(green(pyfiglet.figlet_format("Worldscape", font="banner3-D")))
     print("\n")
     print(green("Get ready to explore the world and test your knowledge!\n"))
     while True:
@@ -141,6 +145,7 @@ def main():
                 option_game = input(green("Select a game to play: (A. Country, B. City, C. Landmarks)\n\n")).lower()
                 if option_game != 'a' and option_game != 'b' and option_game != 'c' and option_game != 'e':
                     clear_terminal()
+                    print("\n")
                     print(red("Enter 'a', 'b', 'c' or 'e' to choose from the menu to play!"))
                     continue
                 elif option_game == 'a':
