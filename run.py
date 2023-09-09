@@ -79,7 +79,6 @@ def play_game(name_list, name):
     game.generate_secret_name().lower() # Calling 'generate_secret_name()' function to generate a secret name.
     game.encode_name()  # Calling 'encode_name()' function to encode the secret name with dashes.
     while game.lives > 0:
-        clear_terminal()
         game.display_output(name)   # Calling 'display_output()' function to display the game information.
         print("\n" * 2)
         input_letter = input("Guess a letter: \n").lower()  # Prompt the player for a letter guess.
@@ -100,6 +99,7 @@ def play_game(name_list, name):
         else:
             clear_terminal()
             print(red("Invalid input: Please enter a letter, not a number, special character nor string!"))
+        clear_terminal()
     if game.secret_name != game.encoded_name.lower():
         clear_terminal()
         print(red("Sorry, you lost the game.\n"))
@@ -118,12 +118,12 @@ def main():
     print("\n" * 2)
     while True:
         # Display the main menu options.
-        print("\n" * 2)   
+        print("\n")   
         print("A. HOW TO PLAY")
         print("B. PLAY GAME")
         print("C. GAME STATISTICS")
         print("E. EXIT")
-        print("\n" * 2)
+        print("\n")
        
         option = input(green("Please choose one of the above options:\n")).lower()
         if option == 'a':
@@ -135,6 +135,7 @@ def main():
             clear_terminal()
             while True:
                 # Display game category options.
+                clear_terminal()
                 print("\n" * 2) 
                 print("A. COUNTRY")
                 print("B. CITY")
