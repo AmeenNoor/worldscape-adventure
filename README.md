@@ -8,7 +8,7 @@ Ameen Noor
 
 "Worldscape Adventure" is an interactive word-guessing game that offers players an engaging and educational experience. In this game, players will have the opportunity to explore and guess names of countries, cities, and landmarks from around the world. The objective is to unveil the hidden name by guessing one letter at a time while managing a limited number of lives. The game is designed to test players' knowledge of geography and improve their letter-guessing skills.
 
-![Am I Responsive](https://github.com/AmeenNoor/activeBeat-center/blob/main/assets/responsive/am-i-responsive.png)
+![Am I Responsive](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/responsive/am-i-responsive.png)
 
 Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit the website.
 
