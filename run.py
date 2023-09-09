@@ -54,9 +54,6 @@ def display_how_to_play():
     print("************************************")
     print("HOW TO PLAY")
     print("************************************")
-    print("Welcome to the Worldscape game!")
-    print("In this game, you will be given the opportunity to guess a name, which could be a country, city, or landmark.")
-    print("Here's how to play:")
     print("1. Select 'PLAY GAME' from the main menu.")
     print("2. Choose whether you want to guess a country, city, or landmark.")
     print("3. You will be presented with a name, where the letters are initially hidden with dashes.")
@@ -80,6 +77,7 @@ def play_game(name_list, name):
     game.encode_name()  # Calling 'encode_name()' function to encode the secret name with dashes.
     clear_terminal()
     while game.lives > 0:
+        clear_terminal()
         game.display_output(name)   # Calling 'display_output()' function to display the game information.
         print("\n" * 2)
         input_letter = input("Guess a letter: \n").lower()  # Prompt the player for a letter guess.
@@ -127,7 +125,6 @@ def main():
         print("C. GAME STATISTICS")
         print("E. EXIT")
         print("\n")
-       
         option = input(green("Please choose one of the above options:\n")).lower()
         clear_terminal()
         if option == 'a':
