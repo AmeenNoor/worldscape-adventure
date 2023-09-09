@@ -1,9 +1,12 @@
 import random
 # Worldscape class
+
+
 class Worldscape:
     """
-    Worldscape class represents a word-guessing game environment. Players can guess letters
-    to unveil a secret word, track their progress, and manage their remaining lives.
+    Worldscape class represents a word-guessing game environment.
+    Players can guess letters to unveil a secret word, track their
+    progress, and manage their remaining lives.
     """
     def __init__(self, name_list):
         """
@@ -19,13 +22,15 @@ class Worldscape:
         """
         Function randomly select element from list
         """
-        self.secret_name = random.choice(self.name_list).lower()    #https://www.w3schools.com/python/ref_random_choice.asp
+        # https://www.w3schools.com/python/ref_random_choice.asp
+        self.secret_name = random.choice(self.name_list).lower()
         return self.secret_name
 
     def encode_name(self):
         """
         Function to encode the name by replacing its characters with "-".
-        If country name contains spaces will display spaces as spaces and other letters as dashes.
+        If country name contains spaces will display spaces as spaces and
+        other letters as dashes.
         """
         for x in self.secret_name:
             if (x == " "):
@@ -46,7 +51,8 @@ class Worldscape:
 
     def is_letter_in_name(self, letter):
         """
-        Function determines whether a given letter is present in the secret name.
+        Function determines whether a given letter is present in the
+        secret name.
         """
         if letter in self.secret_name:
             return True
@@ -55,14 +61,16 @@ class Worldscape:
 
     def add_used_letter(self, letter):
         """
-        Function takes a letter entered by the user and adds it to the `letters_used` list.
+        Function takes a letter entered by the user and adds it to the
+        `letters_used` list.
         """
         self.letters_used.append(letter)
         return self.letters_used
 
     def is_letter_used_before(self, letter):
         """
-        Function checks whether if a letter has been previously entered by the user.
+        Function checks whether if a letter has been previously entered
+        by the user.
         """
         if letter in self.letters_used:
             return True
@@ -71,7 +79,8 @@ class Worldscape:
 
     def replace_encoded_name_with_guessed_letter(self, letter):
         """
-        Function to replace dashes in the encoded name with the correct guessed letter.
+        Function to replace dashes in the encoded name with the
+        correct guessed letter.
         """
         new_encoded_name = ""
         for i in range(len(self.secret_name)):
@@ -93,4 +102,3 @@ class Worldscape:
         print(f"{name}: {self.encoded_name}\n")
         print(f"Letters used: {', '.join(self.letters_used)}\n")
         print("************************************")
-

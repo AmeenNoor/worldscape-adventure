@@ -68,7 +68,7 @@ country_list = [
     "Grenada",
     "Guatemala",
     "Guinea",
-    "Guinea-Bissau",
+    "Guinea Bissau",
     "Guyana",
     "Haiti",
     "Holy See",
@@ -118,7 +118,7 @@ country_list = [
     "Montenegro",
     "Morocco",
     "Mozambique",
-    "Myanmar (formerly Burma)",
+    "Myanmar",
     "Namibia",
     "Nauru",
     "Nepal",
@@ -128,7 +128,7 @@ country_list = [
     "Niger",
     "Nigeria",
     "North Korea",
-    "North Macedonia (formerly Macedonia)",
+    "North Macedonia",
     "Norway",
     "Oman",
     "Pakistan",
@@ -375,7 +375,7 @@ city_list = [
     "Dushanbe",
     "Dodoma",
     "Bangkok",
-    "Lomé",
+    "Lome",
     "Nuku'alofa",
     "Port of Spain",
     "Tunis",
@@ -438,5 +438,3 @@ landmark_list = [
     "Potala Palace",
     "Angel Falls"
 ]
-
-
