@@ -33,13 +33,9 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
   - [Testing](#testing)
-    - [Testing User Stories](#testing-user-stories)
     - [Validation Testing](#validation-testing)
-    - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
     - [Manual Testing](#manual-testing)
-    - [Accessibility](#accessibility)
     - [Fixing Bugs](#fixing-bugs)
-    - [Open Bugs](#open-bugs)
   - [Deployment](#deployment)
     - [Heroku](#heroku)
     - [Gitpod](#gitpod)
@@ -141,17 +137,17 @@ Click [here](https://worldscape-adventure-6f50d85fec22.herokuapp.com/) to visit 
 
 8. Colorful Notifications: The game provides interactive feedback and colorful notifications.
 
-![Feature7A](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7a.png)
+![Feature7A](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-a.png)
 
-![Feature7B](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7b.png)
+![Feature7B](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-b.png)
 
-![Feature7C](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7c.png)
+![Feature7C](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-c.png)
 
-![Feature7D](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7d.png)
+![Feature7D](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-d.png)
 
-![Feature7E](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7e.png)
+![Feature7E](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-e.png)
 
-![Feature7F](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7f.png)
+![Feature7F](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/features/feature7-f.png)
 
 
 ### Future Features
@@ -302,9 +298,6 @@ View manual testing results [here!](https://docs.google.com/spreadsheets/d/1C0XA
   Indentation issues in the 'run.py' file have been fixed.
 
   ![Run Fixed](https://github.com/AmeenNoor/worldscape-adventure/blob/main/assets/testing/run-fixed.png)
-  
-### Open Bugs
-An open bug refers to a Safari bug that was identified during the testing phase. The bug causes a portion of the navigation menu to appear floating down on certain devices. As a temporary solution, the bug was addressed by removing the "Us" portion from the "Contact Us" section. However, it is important to note that this is only a temporary fix, and the bug should be resolved in a proper and more permanent manner in the future.
 
 ## Deployment
 ### Heroku
