@@ -112,9 +112,9 @@ def main():
     through the game menu, select game options, and play the game.
     """
     print("\n" * 2)
-    print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=100 ))
-    print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=100 ))
-    print("\n" * 2)
+    print(green(pyfiglet.figlet_format("Welcome To", font = "banner3-D", width=110, justify="center")))
+    print(green(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=110, justify="center")))
+    print("\n")
     clear_terminal()
     while True:
         clear_terminal()
