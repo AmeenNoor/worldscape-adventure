@@ -78,10 +78,12 @@ def play_game(name_list, name):
     game = Worldscape(name_list)    # Create an object of Worldscape class.
     game.generate_secret_name().lower() # Calling 'generate_secret_name()' function to generate a secret name.
     game.encode_name()  # Calling 'encode_name()' function to encode the secret name with dashes.
+    clear_terminal()
     while game.lives > 0:
         game.display_output(name)   # Calling 'display_output()' function to display the game information.
         print("\n" * 2)
         input_letter = input("Guess a letter: \n").lower()  # Prompt the player for a letter guess.
+        clear_terminal()
         if game.is_letter_valid(input_letter):  # Calling 'is_letter_valid()' function to check if letter is valid
             if game.is_letter_used_before(input_letter):    # Calling 'is_letter_used_before()' function to check if user entered same letter before.
                 print(f"{red('You have already used:')} {green(input_letter.capitalize())}")
@@ -99,6 +101,7 @@ def play_game(name_list, name):
         else:
             print(red("Invalid input: Please enter a letter, not a number, special character nor string!"))
     if game.secret_name != game.encoded_name.lower():
+        clear_terminal()
         print("\n" * 2)
         print(red("Sorry, you lost the game."))
         print("\n")
@@ -114,6 +117,7 @@ def main():
     print(pyfiglet.figlet_format("Worldscape", font = "banner3-D", width=100 ))
     print(pyfiglet.figlet_format("Adventure", font = "banner3-D", width=100 ))
     print("\n" * 2)
+    clear_terminal()
     while True:
         clear_terminal()
         # Display the main menu options.
@@ -125,6 +129,7 @@ def main():
         print("\n")
        
         option = input(green("Please choose one of the above options:\n")).lower()
+        clear_terminal()
         if option == 'a':
             clear_terminal()
             print("\n") 
@@ -159,21 +164,21 @@ def main():
                     play_game(city_list, "Landmarks")
                 else:
                     break
-                print("\n" * 2)
+                print("\n")
                 play_again = input(green("Play another game (y to continue, anything else will stop the game)? "))
                 if play_again.lower() != 'y':
                     break
         elif option == 'c':
             clear_terminal()
-            print("\n" * 2) 
+            print("\n") 
             # Calling 'display_statistics()' function to display game statistics.
             display_statistics()
-            print("\n" * 2) 
+            print("\n") 
         elif option == 'e':
             clear_terminal()
-            print("\n" * 2) 
+            print("\n") 
             print("Thank you for using the App! Have a great day!")
-            print("\n" * 2)
+            print("\n")
             break   # Exit the game loop if the user selects 'E' to exit the application.
         else:
             clear_terminal()
